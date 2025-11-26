@@ -13,7 +13,7 @@ h1{
 
 .choice {
     height: 150px;
-    width: 150;
+    width: 150px;   /* FIXED: added px */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -23,7 +23,6 @@ h1{
 .choice:hover {
     cursor: pointer;
     background-color: black;
-
 }
 
 img{
@@ -62,8 +61,11 @@ img{
     background-color: black;
     color: white;
     font-size: 2rem;
-    display: inline;
+    display: inline-block;  /* safer than inline */
     padding: 1rem;
     border-radius: 1rem;
 }
+
+
+
 
